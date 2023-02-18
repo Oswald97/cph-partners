@@ -530,7 +530,31 @@
       text-align: center;
   }
 
+  #lead {
+    background-color: #F8F8F8;
+    margin-bottom: var(--space-48);
+    padding-block: var(--space-48);
+  }
 
+  #lead .lead {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+  }
+
+  #lead .lead__picture img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+  }
+  #lead .lead__bio p {
+    margin-bottom: var(--space-16);
+    font-size: var(--14px);
+  }
+  #lead .section-title {
+    margin-bottom: var(--space-12);
+  }
   footer {
       padding-block: var(--space-32) !important;
       background-color: var(--accent-color);
@@ -659,7 +683,7 @@
           align-items: center;
           justify-content: center;
           padding-block: unset;
-          gap: var(--space-16) var(--space-32);
+          gap: var(--space-16);
           font-size: var(--16px);
       }
 
@@ -700,6 +724,25 @@
       .valeur-card__list .valeur__icon img {
         width: 150px;
         height: 120px;
+      }
+
+      #lead .lead {
+        flex-direction: row;
+        gap: var(--space-12) var(--space-48);
+        align-items: center;
+        font-size: var(--14px);
+      }
+      #lead .lead > div {
+        flex: 1;
+      }
+      #lead .lead__picture img {
+        width: 100%;
+        aspect-ratio: unset;
+        object-fit: cover;
+        /* object-position: top; */
+      }
+      #lead .section-title {
+        margin-bottom: var(--space-12);
       }
 
       footer .footer__main {
