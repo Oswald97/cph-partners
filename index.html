@@ -1,206 +1,639 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <title>CPH Partners</title>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://ajax.googleapis.com; script-src 'unsafe-inline'; style-src 'unsafe-inline'">
-    </head>
+<head>
+    <title>CPH Partners</title>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Open+Sans:wght@400;500;700;800&family=Poppins:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval'; 
+    script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; 
+    connect-src * data: blob: 'unsafe-inline'; 
+    img-src * data: blob: 'unsafe-inline'; 
+    frame-src * data: blob: ; 
+    style-src * data: blob: 'unsafe-inline';
+    font-src * data: blob: 'unsafe-inline';">
+</head>
 
-    <body>
-        <div id="root">
-            <header>
-                <nav class="nav container" id="nav">
-                    <ul class="navlinks">
-                        <li><a href="/" onclick="route()">About</a></li>
-                        <li><a href="/about" onclick="route()">Portfolio</a></li>
-                        <li><a href="/about" onclick="route()">Services</a></li>
-                        <li><a href="/about" onclick="route()">Contact</a></li>
-                    </ul>
-                </nav>
-                <span id="burger" class="burger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-            </header>
-            <div id="main-page">
-
-            </div>
-
-            <footer>
-                <div class="container">
-                    <div class="footer__main">
-                        <div class="footer__logo">
-                            <img src="assets/images/LOGO.svg" alt="">
+<body>
+    <div id="root">
+        <header>
+            <nav class="nav container" id="nav">
+                <ul class="navlinks">
+                    <li><a href="/" class="active">Accueil</a></li>
+                    <li><a href="./about.html">Qui sommes-nous</a></li>
+                    <li><a href="./about.html">Domaines d’activités</a></li>
+                    <li><a href="./about.html">Nos formations</a></li>
+                    <li><a href="./about.html">Livres</a></li>
+                    <li><a href="./about.html">Contact</a></li>
+                </ul>
+            </nav>
+            <span id="burger" class="burger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </header>
+        <div id="main-page">
+            <div class="page-container">
+                <section id="hero">
+                    <div class="container hero">
+                        <div class="hero_about">
+                            <div class="hero__logo">
+                                <img src="assets/images/LOGO.svg" alt="">
+                            </div>
+                            <h6 class="section-title">CPH & PARTNERS</h6>
+                            <p>
+                                Est un cabinet spécialisé en études d’ingénierie du Génie Civil, transport, Management de projets et
+                                de renforcement de capacités.
+                                Notre ambition est de déployer une démarche professionnelle axée sur l’excellence et fondée sur la
+                                transparence et la responsabilité avec une volonté affirmée d’instaurer et de maintenir avec nos
+                                clients, une relation partenariale pour analyser et identifier ensemble, les enjeux techniques,
+                                économiques et financiers
+                                de leurs projets
+            
+                            </p>
                         </div>
-                        <div class="fotter__cph">
-                            <h5>CPH & PARTNERS</h5>
+            
+                        <div class="hero__image">
+                            <img src="../assets/images/hero.png" alt="">
                         </div>
-                        <div class="footer__contact">
-                            <ul role="list" class="contact__list">
-                                <li class="contact__item">
-                                    <a href="#">
-                                        <i>
-                                            <svg width="24" height="24" viewBox="0 0 15 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0.461182 7C0.461182 3.13 3.4917 0 7.2387 0C10.9857 0 14.0162 3.13 14.0162 7C14.0162 11.17 9.7367 16.92 7.98423 19.11C7.59694 19.59 6.89014 19.59 6.50286 19.11C4.7407 16.92 0.461182 11.17 0.461182 7ZM4.81816 7C4.81816 8.38 5.90256 9.5 7.2387 9.5C8.57484 9.5 9.65924 8.38 9.65924 7C9.65924 5.62 8.57484 4.5 7.2387 4.5C5.90256 4.5 4.81816 5.62 4.81816 7Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                        Akpakpa Lomnava, Cotonou - 05 BP 1091 Cotonou,Bénin</a>
-                                </li>
-                                <li class="contact__item">
-                                    <a type="tel" href="tel:+229 96 74 85 75">
-                                        <i>
-                                            <svg width="24" height="24" viewBox="0 0 18 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M16.239 12.26L13.7797 11.97C13.1891 11.9 12.6082 12.11 12.1918 12.54L10.4103 14.38C7.67025 12.94 5.42398 10.63 4.02975 7.79001L5.82095 5.94001C6.23728 5.51001 6.44061 4.91001 6.37283 4.30001L6.09205 1.78001C5.97587 0.77001 5.15288 0.0100098 4.1653 0.0100098H2.49028C1.3962 0.0100098 0.486074 0.95001 0.55385 2.08001C1.067 10.62 7.67993 17.44 15.9388 17.97C17.0329 18.04 17.943 17.1 17.943 15.97V14.24C17.9527 13.23 17.2169 12.38 16.239 12.26Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </i>
-                                        +229 96 74 85 75 / +229 64 11 97 39</a>
-                                </li>
-                                <li class="contact__item">
-                                    <a type="mail" href="mailto:contact@cph-partners.com">
-                                        <i>
-                                            <svg width="24" height="24" viewBox="0 0 18 12" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.51977 6.54682C8.38181 6.54618 8.24719 6.5044 8.13311 6.42682L0.346657 0.880305C0.123287 1.21132 0.00268694 1.60095 0 2.00027V10.0001C0 10.5305 0.210708 11.0392 0.58577 11.4142C0.960833 11.7893 1.46953 12 1.99994 12H15.3329C15.8633 12 16.372 11.7893 16.7471 11.4142C17.1221 11.0392 17.3329 10.5305 17.3329 10.0001V2.00027C17.3266 1.53714 17.1619 1.09012 16.8662 0.733642L8.86642 6.42682C8.76437 6.49845 8.64427 6.54002 8.51977 6.54682Z"
-                                                    fill="white" />
-                                                <path
-                                                    d="M15.1063 0.346986C15.1422 0.325571 15.1698 0.292718 15.1849 0.253693C15.1999 0.214668 15.2014 0.171732 15.1891 0.131767C15.1768 0.0918024 15.1514 0.0571237 15.117 0.0332904C15.0827 0.00945708 15.0413 -0.00215059 14.9996 0.000328495H1.99995C1.9582 -0.00215059 1.91684 0.00945708 1.88248 0.0332904C1.84813 0.0571237 1.82277 0.0918024 1.81047 0.131767C1.79817 0.171732 1.79965 0.214668 1.81467 0.253693C1.82968 0.292718 1.85737 0.325571 1.89328 0.346986L8.4131 4.98686C8.44504 5.00699 8.48202 5.01768 8.51977 5.01768C8.55752 5.01768 8.5945 5.00699 8.62643 4.98686L15.1063 0.346986Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </i>
-                                        contact@cph-partners.com / cphpartners1@gmail.com</a>
-                                </li>
-                            </ul>
-
-                            <ul class="social__links" role="list">
-                                <li>Social Media</li>
-                                <li>
-                                    <a href="#">
-                                        <i>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M12.6552 21H4.30832C3.77693 21 3.34644 20.5551 3.34644 20.0065V3.99345C3.34644 3.44469 3.777 3 4.30832 3H19.8125C20.3437 3 20.7743 3.44469 20.7743 3.99345V20.0065C20.7743 20.5552 20.3436 21 19.8125 21H15.3714V14.0294H17.6368L17.976 11.3128H15.3714V9.57849C15.3714 8.79198 15.5829 8.256 16.6749 8.256L18.0677 8.25537V5.82566C17.8268 5.79255 17 5.71859 16.0381 5.71859C14.03 5.71859 12.6552 6.98457 12.6552 9.30945V11.3128H10.3841V14.0294H12.6552V21Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i>
-                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M21.2487 6.77573C20.6083 7.07692 19.9189 7.28061 19.1957 7.37161C19.9342 6.90358 20.5009 6.16143 20.7679 5.27736C20.0764 5.71073 19.3123 6.026 18.496 6.19502C17.8454 5.45937 16.9155 5 15.8864 5C13.9132 5 12.3123 6.69556 12.3123 8.78657C12.3123 9.08342 12.343 9.37161 12.4043 9.64897C9.43268 9.49079 6.79859 7.98483 5.03401 5.69122C4.72611 6.25244 4.55016 6.90358 4.55016 7.59697C4.55016 8.91008 5.18132 10.0693 6.14084 10.7486C5.55571 10.7302 5.00332 10.558 4.52049 10.2763V10.3229C4.52049 12.1582 5.75314 13.6891 7.38985 14.0358C7.09013 14.1246 6.77404 14.169 6.44772 14.169C6.21756 14.169 5.99251 14.1463 5.77462 14.1018C6.22984 15.6056 7.54943 16.701 9.11454 16.7302C7.8911 17.7465 6.3485 18.3521 4.67394 18.3521C4.38547 18.3521 4.10006 18.3348 3.8208 18.3001C5.4033 19.3727 7.28347 20 9.30174 20C15.8793 20 19.4749 14.2308 19.4749 9.22644C19.4749 9.06176 19.4719 8.89707 19.4657 8.73564C20.1644 8.20152 20.771 7.53521 21.2487 6.77573Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M5.34659 7.77127H5.322C4.09237 7.77127 3.29517 6.94039 3.29517 5.88717C3.29517 4.81347 4.11594 4 5.37016 4C6.62336 4 7.39392 4.81142 7.41851 5.8841C7.41851 6.93731 6.62336 7.77127 5.34659 7.77127ZM20.7232 20H16.8714V14.3754C16.8714 12.9032 16.2688 11.8981 14.9439 11.8981C13.9305 11.8981 13.3669 12.5763 13.1046 13.23C13.018 13.4366 13.0195 13.7146 13.0212 14.0012V14.0013C13.0214 14.0401 13.0216 14.0792 13.0216 14.1183V20H9.20566C9.20566 20 9.25484 10.0365 9.20566 9.13087H13.0216V10.8367C13.247 10.0908 14.4664 9.02637 16.4123 9.02637C18.8265 9.02637 20.7232 10.5898 20.7232 13.9564V20ZM7.13159 9.13086H3.73474V20H7.13159V9.13086Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i>
-                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M20.3306 6.96979C20.8529 7.53063 21.0234 8.80424 21.0234 8.80424C21.0234 8.80424 21.1977 10.3002 21.1977 11.7956V13.198C21.1977 14.694 21.0234 16.1894 21.0234 16.1894C21.0234 16.1894 20.8529 17.463 20.3306 18.0239C19.7335 18.6873 19.0714 18.7559 18.6972 18.7946C18.656 18.7989 18.6183 18.8028 18.5846 18.8071C16.1458 18.9942 12.4837 19 12.4837 19C12.4837 19 7.95247 18.9561 6.55824 18.814C6.49218 18.8009 6.41211 18.7907 6.32142 18.7792C5.87979 18.723 5.18662 18.6348 4.63627 18.0239C4.11398 17.463 3.94405 16.1894 3.94405 16.1894C3.94405 16.1894 3.76978 14.694 3.76978 13.198V11.7956C3.76978 10.3002 3.94405 8.80424 3.94405 8.80424C3.94405 8.80424 4.11398 7.53063 4.63627 6.96979C5.23473 6.30538 5.89747 6.23757 6.27176 6.19928C6.31234 6.19513 6.34952 6.19132 6.38287 6.18714C8.82169 6 12.4799 6 12.4799 6H12.4875C12.4875 6 16.1458 6 18.5846 6.18714C18.6179 6.19133 18.6551 6.19514 18.6958 6.1993C19.0698 6.2376 19.7328 6.30549 20.3306 6.96979ZM10.6837 9.7041L10.6842 14.8973L15.3925 12.3096L10.6837 9.7041Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M11.9581 3C9.59153 3 9.29478 3.01036 8.36534 3.05416C7.43784 3.09785 6.8044 3.25001 6.25012 3.47251C5.6771 3.70247 5.19115 4.01021 4.70668 4.51055C4.22224 5.01092 3.92429 5.51283 3.70163 6.10466C3.4862 6.67712 3.33888 7.33137 3.29658 8.28931C3.25417 9.24926 3.24414 9.55575 3.24414 12C3.24414 14.4443 3.25417 14.7507 3.29658 15.7107C3.33888 16.6686 3.4862 17.3229 3.70163 17.8953C3.92429 18.4872 4.22224 18.9891 4.70668 19.4895C5.19115 19.9898 5.6771 20.2975 6.25012 20.5275C6.8044 20.75 7.43784 20.9021 8.36534 20.9458C9.29478 20.9896 9.59153 21 11.9581 21C14.3247 21 14.6214 20.9896 15.5508 20.9458C16.4783 20.9021 17.1118 20.75 17.6661 20.5275C18.2391 20.2975 18.725 19.9898 19.2095 19.4895C19.6939 18.9891 19.9919 18.4872 20.2146 17.8953C20.43 17.3229 20.5773 16.6686 20.6196 15.7107C20.662 14.7507 20.672 14.4443 20.672 12C20.672 9.55575 20.662 9.24926 20.6196 8.28931C20.5773 7.33137 20.43 6.67712 20.2146 6.10466C19.9919 5.51283 19.6939 5.01092 19.2095 4.51055C18.725 4.01021 18.2391 3.70247 17.6661 3.47251C17.1118 3.25001 16.4783 3.09785 15.5508 3.05416C14.6214 3.01036 14.3247 3 11.9581 3ZM11.9581 4.62158C14.2848 4.62158 14.5604 4.63076 15.4792 4.67406C16.3288 4.71408 16.7902 4.86069 17.0973 4.98395C17.504 5.14721 17.7943 5.34224 18.0992 5.65719C18.4042 5.97211 18.593 6.27192 18.7511 6.69202C18.8704 7.00916 19.0124 7.4857 19.0511 8.36319C19.093 9.3122 19.1019 9.59687 19.1019 12C19.1019 14.4031 19.093 14.6877 19.0511 15.6367C19.0124 16.5142 18.8704 16.9908 18.7511 17.3079C18.593 17.728 18.4042 18.0278 18.0992 18.3427C17.7943 18.6577 17.504 18.8527 17.0973 19.016C16.7902 19.1392 16.3288 19.2859 15.4792 19.3259C14.5605 19.3692 14.2849 19.3783 11.9581 19.3783C9.63114 19.3783 9.3556 19.3692 8.43685 19.3259C7.58725 19.2859 7.12585 19.1392 6.8188 19.016C6.41205 18.8527 6.12177 18.6577 5.81686 18.3427C5.51195 18.0278 5.32309 17.728 5.16501 17.3079C5.04567 16.9908 4.90372 16.5142 4.86497 15.6367C4.82305 14.6877 4.81416 14.4031 4.81416 12C4.81416 9.59687 4.82305 9.3122 4.86497 8.36319C4.90372 7.4857 5.04567 7.00916 5.16501 6.69202C5.32309 6.27192 5.51191 5.97211 5.81686 5.65719C6.12177 5.34224 6.41205 5.14721 6.8188 4.98395C7.12585 4.86069 7.58725 4.71408 8.43685 4.67406C9.3557 4.63076 9.63132 4.62158 11.9581 4.62158ZM7.48325 12.0001C7.48325 9.44757 9.48664 7.37842 11.958 7.37842C14.4293 7.37842 16.4327 9.44757 16.4327 12.0001C16.4327 14.5525 14.4293 16.6217 11.958 16.6217C9.48664 16.6217 7.48325 14.5525 7.48325 12.0001ZM11.9582 15C10.354 15 9.05351 13.6569 9.05351 12C9.05351 10.3431 10.354 9 11.9582 9C13.5624 9 14.8628 10.3431 14.8628 12C14.8628 13.6569 13.5624 15 11.9582 15ZM16.6096 8.27573C17.1871 8.27573 17.6553 7.79222 17.6553 7.19574C17.6553 6.59927 17.1871 6.11572 16.6096 6.11572C16.0321 6.11572 15.5639 6.59927 15.5639 7.19574C15.5639 7.79222 16.0321 8.27573 16.6096 8.27573Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i>
-                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12.2463 13.5863C11.3804 13.5863 9.25378 13.5891 9.25378 13.5891V11.4109H14.5698C14.9401 14.0465 13.8232 18 9.25378 18C6.19672 18 3.71851 15.5375 3.71851 12.5C3.71851 9.46242 6.19672 7 9.25378 7C10.6882 7 11.9952 7.54216 12.9786 8.43152C12.2166 9.14656 11.9723 9.41914 11.7647 9.65073C11.6567 9.77121 11.5587 9.88059 11.4029 10.0354C10.8341 9.56801 10.214 9.23267 9.25378 9.23267C7.43772 9.23267 6.0203 10.6955 6.0203 12.5C6.0203 14.3045 7.43772 15.7673 9.25378 15.7673C11.0483 15.7673 11.7774 14.9984 12.2463 13.5863ZM19.2282 9.61377V11.5197H21.1464V12.8811H19.2282V14.8415H17.8581V12.8811H15.8851V11.5197H17.8581V9.61377H19.2282Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
                     </div>
-                    <div class="footer__second">
-                        <div class="footer__nav">
+                </section>
+            
+                <section id="domaine" class="dotted-bg">
+                    <div class="container">
+                        <h6 class="section-title" data-description="EXPERTISES">Nos domaines d’activités</h6>
+            
+                        <div class="domaine-list">
+                            <div class="domaine__card">
+                                <div class="domaine__icon">
+                                    <i>
+                                        <svg width="40px" height="40px" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="40" height="40" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                    <use xlink:href="#image0_1_2115" transform="scale(0.015625)" />
+                                                </pattern>
+                                                <image id="image0_1_2115" width="64" height="64"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+            
+                                    </i>
+                                </div>
+                                <div class="domaine__details">
+                                    <h6 class="domaine__title">Audit & Expertise</h6>
+                                    <p class="domaine__description">
+                                        Audit technique, audit des marchés
+                                        publics, suivi et évaluation de projets, expertise immobilière...
+                                    </p>
+                                </div>
+                            </div>
+            
+                            <div class="domaine__card">
+                                <div class="domaine__icon">
+                                    <i>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="40" height="40" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                    <use xlink:href="#image0_1_2104" transform="scale(0.015625)" />
+                                                </pattern>
+                                                <image id="image0_1_2104" width="64" height="64"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+            
+                                    </i>
+                                </div>
+                                <div class="domaine__details">
+                                    <h6 class="domaine__title">Assistance à maitrise d’ouvrage
+                                    </h6>
+                                    <p class="domaine__description">
+                                        Assistance, organisation et
+                                        planification, assistance au suivi
+                                        technique.........
+            
+                                    </p>
+                                </div>
+                            </div>
+            
+                            <div class="domaine__card">
+                                <div class="domaine__icon">
+                                    <i>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="40" height="40" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                    <use xlink:href="#image0_1_2120" transform="scale(0.015625)" />
+                                                </pattern>
+                                                <image id="image0_1_2120" width="64" height="64"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+                                    </i>
+                                </div>
+                                <div class="domaine__details">
+                                    <h6 class="domaine__title">Etudes préliminaires</h6>
+                                    <p class="domaine__description">
+                                        Etudes de diagnostic, études de
+                                        faisabilité, de programmation ou
+                                        d’impacts, échémas directeurs....
+            
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                <section id="valeur" class="circular-bg">
+                    <div class="container">
+                        <h6 class="section-title" data-description="A PROPOS DE NOUS">Nos valeurs</h6>
+            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a consequatur itaque nihil quia, esse
+                            minima quod. Omnis fuga, magni exercitationem eius voluptatem inventore autem ipsa porro, delectus earum
+                            molestiae dolores, aliquam amet soluta. Nemo consequatur ex aut sunt ipsum explicabo sint, alias minima
+                            in facilis amet fuga quos natus?
+                        </p>
+            
+                    </div>
+                </section>
+            
+                <section id="formation" class="dotted-bg">
+                    <div class="container">
+                        <h6 class="section-title" data-description="COMPÉTENCES">Nos Formations</h6>
+            
+                        <div class="formation-list">
+                            <div class="formation__item">
+            
+                                <div class="formation__description">
+                                    <h3 class="formation__title">Passation des marchés</h3>
+                                    <p class="formation__details">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit culpa hic commodi
+                                        aspernatur nemo quaerat.
+                                    </p>
+                                    <!--  -->
+                                </div>
+                                <div class="formation__cover">
+                                    <a href="#">
+                                        <img src="../assets/images/formations/formation-1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <div class="formation__item">
+            
+                                <div class="formation__description">
+                                    <h3 class="formation__title">Maîtrise des coûts BTP</h3>
+                                    <p class="formation__details">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit culpa hic commodi
+                                        aspernatur nemo quaerat.
+                                    </p>
+                                </div>
+                                <div class="formation__cover">
+                                    <a href="#">
+                                        <img src="../assets/images/formations/formation-2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <div class="formation__item">
+            
+                                <div class="formation__description">
+                                    <h3 class="formation__title">Exécution des travaux</h3>
+                                    <p class="formation__details">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea similique repellendus maiores
+                                        sapiente labore, molestias eos eveniet perspiciatis expedita nostrum?
+                                    </p>
+                                </div>
+                                <div class="formation__cover">
+                                    <a href="#">
+                                        <img src="../assets/images/formations/formation-3.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <div class="formation__item">
+            
+                                <div class="formation__description">
+                                    <h3 class="formation__title">Gestion de projets</h3>
+                                    <p class="formation__details">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam enim voluptatum possimus quod
+                                        dicta exercitationem, neque iure maiores iste voluptatibus, autem, saepe culpa!
+                                    </p>
+                                </div>
+                                <div class="formation__cover">
+                                    <a href="#">
+                                        <img src="../assets/images/formations/formation-1.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="statistic" class="">
+                    <div class="container">
+                        <h6 class="section-title__secondary">Plus de 2000 formations & accompagnement
+                            réalisées avec succès
+                        </h6>
+            
+                        <div class="stat__list">
+                            <div class="stat__item">
+                                <i class="stat__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path
+                                            d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
+                                    </svg>
+                                </i>
+                                <h6 data-val="500" class="stat__counter num">500</h6>
+                                <div class="stat__line"></div>
+                                <p class="stat__name">Projets</p>
+                            </div>
+            
+                            <div class="stat__item">
+                                <i class="stat__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z" />
+                                    </svg>
+                                </i>
+                                <h6 data-val="100" class="stat__counter num">100</h6>
+                                <div class="stat__line"></div>
+                                <p class="stat__name">Clients</p>
+                            </div>
+            
+                            <div class="stat__item">
+                                <i class="stat__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                                    </svg>
+                                </i>
+                                <h6 data-val="250" class="stat__counter num">250</h6>
+                                <div class="stat__line"></div>
+                                <p class="stat__name">Formations</p>
+                            </div>
+            
+                            <div class="stat__item">
+                                <i class="stat__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path
+                                            d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
+                                    </svg>
+                                </i>
+                                <h6 data-val="500" class="stat__counter num">500</h6>
+                                <div class="stat__line"></div>
+                                <p class="stat__name">Projets</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+            
+                <section id="partners">
+                    <div class="partners container">
+                        <h6 class="section-title__secondary">Ils nous font confiance</h6>
+            
+                        <div class="partners__gallery">
                             <ul role="list">
-                                <li><a href="">Accueil</a></li>
-                                <li><a href="">Qui sommes-nous</a></li>
-                                <li><a href="">Domaies d’activités</a></li>
-                                <li><a href="">Nos formations</a></li>
-                                <li><a href="">Livres</a></li>
-                                <li><a href="">Contacts</a></li>
-
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/ue.svg" alt="">
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/nip.svg" alt="">
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/afd.svg" alt="">
+                                    </a>
+                                </li>
+            
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/worldbank logo 1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/kekeli.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/bidc.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/isdb.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/morocco.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/giz.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/africa.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/artelia.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/cellule.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/eprd.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/armp.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/millenium.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/MCVDD 1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/nsia.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/suez.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/hiram.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/sofreco.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/came.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/getran.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/projes.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/SIRAT.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/boad.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../assets/images/partners/banca.svg" alt="">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="footer__copywrite">
-                            <p>Copyright © 2022 • StudioHarmonie</p>
-                        </div>
                     </div>
-                </div>
-            </footer>
+                </section>
+            </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="assets/js/router.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <footer>
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__logo">
+                        <img src="assets/images/LOGO.svg" alt="">
+                    </div>
+                    <div class="fotter__cph">
+                        <h5>CPH & PARTNERS</h5>
+                    </div>
+                    <div class="footer__contact">
+                        <ul role="list" class="contact__list">
+                            <li class="contact__item">
+                                <a href="#">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 15 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.461182 7C0.461182 3.13 3.4917 0 7.2387 0C10.9857 0 14.0162 3.13 14.0162 7C14.0162 11.17 9.7367 16.92 7.98423 19.11C7.59694 19.59 6.89014 19.59 6.50286 19.11C4.7407 16.92 0.461182 11.17 0.461182 7ZM4.81816 7C4.81816 8.38 5.90256 9.5 7.2387 9.5C8.57484 9.5 9.65924 8.38 9.65924 7C9.65924 5.62 8.57484 4.5 7.2387 4.5C5.90256 4.5 4.81816 5.62 4.81816 7Z"
+                                                fill="white" />
+                                        </svg>
 
-        <script>
-            $(window).scroll(function () {
-                if ($(document).scrollTop() > 50) {
-                    $('header').addClass('affix');
-                } else {
-                    $('header').removeClass('affix');
+                                    </i>
+                                    Akpakpa Lomnava, Cotonou - 05 BP 1091 Cotonou,Bénin</a>
+                            </li>
+                            <li class="contact__item">
+                                <a type="tel" href="tel:+229 96 74 85 75">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.239 12.26L13.7797 11.97C13.1891 11.9 12.6082 12.11 12.1918 12.54L10.4103 14.38C7.67025 12.94 5.42398 10.63 4.02975 7.79001L5.82095 5.94001C6.23728 5.51001 6.44061 4.91001 6.37283 4.30001L6.09205 1.78001C5.97587 0.77001 5.15288 0.0100098 4.1653 0.0100098H2.49028C1.3962 0.0100098 0.486074 0.95001 0.55385 2.08001C1.067 10.62 7.67993 17.44 15.9388 17.97C17.0329 18.04 17.943 17.1 17.943 15.97V14.24C17.9527 13.23 17.2169 12.38 16.239 12.26Z"
+                                                fill="white" />
+                                        </svg>
+                                    </i>
+                                    +229 96 74 85 75 / +229 64 11 97 39</a>
+                            </li>
+                            <li class="contact__item">
+                                <a type="mail" href="mailto:contact@cph-partners.com">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 18 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.51977 6.54682C8.38181 6.54618 8.24719 6.5044 8.13311 6.42682L0.346657 0.880305C0.123287 1.21132 0.00268694 1.60095 0 2.00027V10.0001C0 10.5305 0.210708 11.0392 0.58577 11.4142C0.960833 11.7893 1.46953 12 1.99994 12H15.3329C15.8633 12 16.372 11.7893 16.7471 11.4142C17.1221 11.0392 17.3329 10.5305 17.3329 10.0001V2.00027C17.3266 1.53714 17.1619 1.09012 16.8662 0.733642L8.86642 6.42682C8.76437 6.49845 8.64427 6.54002 8.51977 6.54682Z"
+                                                fill="white" />
+                                            <path
+                                                d="M15.1063 0.346986C15.1422 0.325571 15.1698 0.292718 15.1849 0.253693C15.1999 0.214668 15.2014 0.171732 15.1891 0.131767C15.1768 0.0918024 15.1514 0.0571237 15.117 0.0332904C15.0827 0.00945708 15.0413 -0.00215059 14.9996 0.000328495H1.99995C1.9582 -0.00215059 1.91684 0.00945708 1.88248 0.0332904C1.84813 0.0571237 1.82277 0.0918024 1.81047 0.131767C1.79817 0.171732 1.79965 0.214668 1.81467 0.253693C1.82968 0.292718 1.85737 0.325571 1.89328 0.346986L8.4131 4.98686C8.44504 5.00699 8.48202 5.01768 8.51977 5.01768C8.55752 5.01768 8.5945 5.00699 8.62643 4.98686L15.1063 0.346986Z"
+                                                fill="white" />
+                                        </svg>
+                                    </i>
+                                    contact@cph-partners.com / cphpartners1@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <ul class="social__links" role="list">
+                            <li>Social Media</li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6552 21H4.30832C3.77693 21 3.34644 20.5551 3.34644 20.0065V3.99345C3.34644 3.44469 3.777 3 4.30832 3H19.8125C20.3437 3 20.7743 3.44469 20.7743 3.99345V20.0065C20.7743 20.5552 20.3436 21 19.8125 21H15.3714V14.0294H17.6368L17.976 11.3128H15.3714V9.57849C15.3714 8.79198 15.5829 8.256 16.6749 8.256L18.0677 8.25537V5.82566C17.8268 5.79255 17 5.71859 16.0381 5.71859C14.03 5.71859 12.6552 6.98457 12.6552 9.30945V11.3128H10.3841V14.0294H12.6552V21Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.2487 6.77573C20.6083 7.07692 19.9189 7.28061 19.1957 7.37161C19.9342 6.90358 20.5009 6.16143 20.7679 5.27736C20.0764 5.71073 19.3123 6.026 18.496 6.19502C17.8454 5.45937 16.9155 5 15.8864 5C13.9132 5 12.3123 6.69556 12.3123 8.78657C12.3123 9.08342 12.343 9.37161 12.4043 9.64897C9.43268 9.49079 6.79859 7.98483 5.03401 5.69122C4.72611 6.25244 4.55016 6.90358 4.55016 7.59697C4.55016 8.91008 5.18132 10.0693 6.14084 10.7486C5.55571 10.7302 5.00332 10.558 4.52049 10.2763V10.3229C4.52049 12.1582 5.75314 13.6891 7.38985 14.0358C7.09013 14.1246 6.77404 14.169 6.44772 14.169C6.21756 14.169 5.99251 14.1463 5.77462 14.1018C6.22984 15.6056 7.54943 16.701 9.11454 16.7302C7.8911 17.7465 6.3485 18.3521 4.67394 18.3521C4.38547 18.3521 4.10006 18.3348 3.8208 18.3001C5.4033 19.3727 7.28347 20 9.30174 20C15.8793 20 19.4749 14.2308 19.4749 9.22644C19.4749 9.06176 19.4719 8.89707 19.4657 8.73564C20.1644 8.20152 20.771 7.53521 21.2487 6.77573Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.34659 7.77127H5.322C4.09237 7.77127 3.29517 6.94039 3.29517 5.88717C3.29517 4.81347 4.11594 4 5.37016 4C6.62336 4 7.39392 4.81142 7.41851 5.8841C7.41851 6.93731 6.62336 7.77127 5.34659 7.77127ZM20.7232 20H16.8714V14.3754C16.8714 12.9032 16.2688 11.8981 14.9439 11.8981C13.9305 11.8981 13.3669 12.5763 13.1046 13.23C13.018 13.4366 13.0195 13.7146 13.0212 14.0012V14.0013C13.0214 14.0401 13.0216 14.0792 13.0216 14.1183V20H9.20566C9.20566 20 9.25484 10.0365 9.20566 9.13087H13.0216V10.8367C13.247 10.0908 14.4664 9.02637 16.4123 9.02637C18.8265 9.02637 20.7232 10.5898 20.7232 13.9564V20ZM7.13159 9.13086H3.73474V20H7.13159V9.13086Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.3306 6.96979C20.8529 7.53063 21.0234 8.80424 21.0234 8.80424C21.0234 8.80424 21.1977 10.3002 21.1977 11.7956V13.198C21.1977 14.694 21.0234 16.1894 21.0234 16.1894C21.0234 16.1894 20.8529 17.463 20.3306 18.0239C19.7335 18.6873 19.0714 18.7559 18.6972 18.7946C18.656 18.7989 18.6183 18.8028 18.5846 18.8071C16.1458 18.9942 12.4837 19 12.4837 19C12.4837 19 7.95247 18.9561 6.55824 18.814C6.49218 18.8009 6.41211 18.7907 6.32142 18.7792C5.87979 18.723 5.18662 18.6348 4.63627 18.0239C4.11398 17.463 3.94405 16.1894 3.94405 16.1894C3.94405 16.1894 3.76978 14.694 3.76978 13.198V11.7956C3.76978 10.3002 3.94405 8.80424 3.94405 8.80424C3.94405 8.80424 4.11398 7.53063 4.63627 6.96979C5.23473 6.30538 5.89747 6.23757 6.27176 6.19928C6.31234 6.19513 6.34952 6.19132 6.38287 6.18714C8.82169 6 12.4799 6 12.4799 6H12.4875C12.4875 6 16.1458 6 18.5846 6.18714C18.6179 6.19133 18.6551 6.19514 18.6958 6.1993C19.0698 6.2376 19.7328 6.30549 20.3306 6.96979ZM10.6837 9.7041L10.6842 14.8973L15.3925 12.3096L10.6837 9.7041Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.9581 3C9.59153 3 9.29478 3.01036 8.36534 3.05416C7.43784 3.09785 6.8044 3.25001 6.25012 3.47251C5.6771 3.70247 5.19115 4.01021 4.70668 4.51055C4.22224 5.01092 3.92429 5.51283 3.70163 6.10466C3.4862 6.67712 3.33888 7.33137 3.29658 8.28931C3.25417 9.24926 3.24414 9.55575 3.24414 12C3.24414 14.4443 3.25417 14.7507 3.29658 15.7107C3.33888 16.6686 3.4862 17.3229 3.70163 17.8953C3.92429 18.4872 4.22224 18.9891 4.70668 19.4895C5.19115 19.9898 5.6771 20.2975 6.25012 20.5275C6.8044 20.75 7.43784 20.9021 8.36534 20.9458C9.29478 20.9896 9.59153 21 11.9581 21C14.3247 21 14.6214 20.9896 15.5508 20.9458C16.4783 20.9021 17.1118 20.75 17.6661 20.5275C18.2391 20.2975 18.725 19.9898 19.2095 19.4895C19.6939 18.9891 19.9919 18.4872 20.2146 17.8953C20.43 17.3229 20.5773 16.6686 20.6196 15.7107C20.662 14.7507 20.672 14.4443 20.672 12C20.672 9.55575 20.662 9.24926 20.6196 8.28931C20.5773 7.33137 20.43 6.67712 20.2146 6.10466C19.9919 5.51283 19.6939 5.01092 19.2095 4.51055C18.725 4.01021 18.2391 3.70247 17.6661 3.47251C17.1118 3.25001 16.4783 3.09785 15.5508 3.05416C14.6214 3.01036 14.3247 3 11.9581 3ZM11.9581 4.62158C14.2848 4.62158 14.5604 4.63076 15.4792 4.67406C16.3288 4.71408 16.7902 4.86069 17.0973 4.98395C17.504 5.14721 17.7943 5.34224 18.0992 5.65719C18.4042 5.97211 18.593 6.27192 18.7511 6.69202C18.8704 7.00916 19.0124 7.4857 19.0511 8.36319C19.093 9.3122 19.1019 9.59687 19.1019 12C19.1019 14.4031 19.093 14.6877 19.0511 15.6367C19.0124 16.5142 18.8704 16.9908 18.7511 17.3079C18.593 17.728 18.4042 18.0278 18.0992 18.3427C17.7943 18.6577 17.504 18.8527 17.0973 19.016C16.7902 19.1392 16.3288 19.2859 15.4792 19.3259C14.5605 19.3692 14.2849 19.3783 11.9581 19.3783C9.63114 19.3783 9.3556 19.3692 8.43685 19.3259C7.58725 19.2859 7.12585 19.1392 6.8188 19.016C6.41205 18.8527 6.12177 18.6577 5.81686 18.3427C5.51195 18.0278 5.32309 17.728 5.16501 17.3079C5.04567 16.9908 4.90372 16.5142 4.86497 15.6367C4.82305 14.6877 4.81416 14.4031 4.81416 12C4.81416 9.59687 4.82305 9.3122 4.86497 8.36319C4.90372 7.4857 5.04567 7.00916 5.16501 6.69202C5.32309 6.27192 5.51191 5.97211 5.81686 5.65719C6.12177 5.34224 6.41205 5.14721 6.8188 4.98395C7.12585 4.86069 7.58725 4.71408 8.43685 4.67406C9.3557 4.63076 9.63132 4.62158 11.9581 4.62158ZM7.48325 12.0001C7.48325 9.44757 9.48664 7.37842 11.958 7.37842C14.4293 7.37842 16.4327 9.44757 16.4327 12.0001C16.4327 14.5525 14.4293 16.6217 11.958 16.6217C9.48664 16.6217 7.48325 14.5525 7.48325 12.0001ZM11.9582 15C10.354 15 9.05351 13.6569 9.05351 12C9.05351 10.3431 10.354 9 11.9582 9C13.5624 9 14.8628 10.3431 14.8628 12C14.8628 13.6569 13.5624 15 11.9582 15ZM16.6096 8.27573C17.1871 8.27573 17.6553 7.79222 17.6553 7.19574C17.6553 6.59927 17.1871 6.11572 16.6096 6.11572C16.0321 6.11572 15.5639 6.59927 15.5639 7.19574C15.5639 7.79222 16.0321 8.27573 16.6096 8.27573Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.2463 13.5863C11.3804 13.5863 9.25378 13.5891 9.25378 13.5891V11.4109H14.5698C14.9401 14.0465 13.8232 18 9.25378 18C6.19672 18 3.71851 15.5375 3.71851 12.5C3.71851 9.46242 6.19672 7 9.25378 7C10.6882 7 11.9952 7.54216 12.9786 8.43152C12.2166 9.14656 11.9723 9.41914 11.7647 9.65073C11.6567 9.77121 11.5587 9.88059 11.4029 10.0354C10.8341 9.56801 10.214 9.23267 9.25378 9.23267C7.43772 9.23267 6.0203 10.6955 6.0203 12.5C6.0203 14.3045 7.43772 15.7673 9.25378 15.7673C11.0483 15.7673 11.7774 14.9984 12.2463 13.5863ZM19.2282 9.61377V11.5197H21.1464V12.8811H19.2282V14.8415H17.8581V12.8811H15.8851V11.5197H17.8581V9.61377H19.2282Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer__second">
+                    <div class="footer__nav">
+                        <ul role="list">
+                            <li><a href="">Accueil</a></li>
+                            <li><a href="">Qui sommes-nous</a></li>
+                            <li><a href="">Domaies d’activités</a></li>
+                            <li><a href="">Nos formations</a></li>
+                            <li><a href="">Livres</a></li>
+                            <li><a href="">Contacts</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer__copywrite">
+                        <p>Copyright © 2022 • StudioHarmonie</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="assets/js/router.js"></script> -->
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('header').addClass('affix');
+            } else {
+                $('header').removeClass('affix');
+            }
+        });
+
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () {
+                startValue += 1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) {
+                    clearInterval(counter);
                 }
-            });
-        </script>
-    </body>
+            }, duration);
+        });
+    </script>
+</body>
 
 </html>
