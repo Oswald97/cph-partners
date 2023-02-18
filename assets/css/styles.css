@@ -638,7 +638,7 @@
       }
 
       .container {
-          padding-inline: calc(var(--space-32)) !important;
+          padding-inline: calc(var(--space-48)) !important;
 
       }
   }
